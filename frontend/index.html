@@ -2,29 +2,107 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/jpg" href="/pasky.jpg" />
+    <link rel="icon" type="image/jpg" href="/handsome.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Paschal Ugoh | Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <nav class="header__nav">
-        <div class="header__logo">
-          <h1>Paschal Ugoh</h1>
-        </div>
-        
-        <ul class="header__menu">
+    <section class="background-header-and-hero">
+<nav id="desktop-nav">
+      <div class="logo">Paschal Ugoh</div>
+      <div>
+        <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-      </nav>
-    </header>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Paschal Ugoh</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
 
     <section class="hero">
+      <div class="hero__pic-container">
+        <img src="./assets/handsome.jpg" alt="Paschal Ugoh">
+      </div>
 
+      <div class="hero__text">
+        <p class="hero__text__p1">Hey, I’m</p>
+        <h1 class="hero__text__title">Paschal Ugoh</h1>
+        <p class="hero__text__p2">Backend Engineer & Developer</p>
+        <p class="hero__text__p3">
+          <div>
+            I build scalable, reliable backend systems 
+          </div>
+          <div>
+            that power innovative products.
+          </div>
+          <div>I help startups turn ideas into reality,</div><div>with solutions
+              trusted by clients </div>
+              <div>across multiple countries.</div>
+          </p>
+
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/handsome.jpg')">Download CV</button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+        </div>
+
+        <div id="socials-container">
+          <img src="./assets/linkedin.png" class="socials-icon" alt="linkedin"  onclick="location.href='https://linkedin.com/in/ugohpaschal'">
+          <img src="./assets/github.png" class="socials-icon" alt="github" onclick="location.href='https://github.com/UgohP'">
+          <img src="./assets/linkedin.png" class="socials-icon" alt="x" onclick="location.href='https://x.com/pasky_u'">
+        </div>
+      </div>
     </section>
+      <!-- <section class="hero">
+        <div class="hero-image">
+          <img src="./assets/pasky.jpg" alt="Paschal Ugoh" />
+        </div>
+
+        <div class="hero-content">
+          <div class="hero-content-info">
+            <h4>Hi, I’m</h4>
+            <h1>Paschal Ugoh</h1>
+            <h2>Backend Engineer & Developer</h2>
+            <p>
+              I build scalable, reliable backend systems that power innovative
+              products. I help startups turn ideas into reality, with solutions
+              trusted by clients across multiple countries.
+            </p>
+          </div>
+
+          <div class="hero-content__buttons"></div>
+          <button class="bero-content__resume-button">Resume</button>
+        </div>
+      </section>
+    </section>
+    <section class="about" id="about">
+      <h1>About</h1>
+      <p>
+        A Software Enginner and Web Developer building and managing Software,
+        Websites and Web Applications experienced in leading cross-functional
+        teams in a time-pressured setting to complete projects on schedule and
+        within budget.
+      </p>
+      <p>I help startups launch and grow their products</p>
+    </section> -->
+  
+    <script src="js/script.js"></script>
   </body>
 </html>
