@@ -1,0 +1,28 @@
+*{
+list-style: none;
+text-decoration: none;
+/* margin: 0; */
+/* padding: 0; */
+}
+
+/* navbar */
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo{
+    order: 1;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.header__menu{
+    order: 2;
+    display: flex;
+    justify-content: flex-end;
+  gap: 64px;
+    padding: 20px;
+    list-style: none;
+}
