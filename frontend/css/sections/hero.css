@@ -1,96 +1,97 @@
 .hero{
     display: flex;
-    justify-content: center;
     gap: 5rem;
-    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    font-family: var(--poppins-sans);
 }
 
-.hero__pic-container{
+.hero-img{
     display: flex;
-    justify-content: center;
     height: 400px;
     width: 400px;
-    margin: auto 0;
+    margin: auto, 0;
 }
 
-.hero__text{
+.hero-img img{
+    border-radius: 100%;
+}
+
+.hero__content{
     align-self: center;
     text-align: center;
 }
 
-.hero__text p{
+.hero__content-txt1{
+    font-weight: 400;
+    color: var(--grey);
+}
+
+.title{
+    color: var(--black);
     font-weight: 500;
+    font-size: 3rem;
 }
 
-.hero__text__p3{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+.hero__content-txt3{
+    font-weight: 800;
+    font-size: 1.65rem;
+    color: var(--grey);
+    margin-bottom: 0.3rem;
 }
 
-.hero__text__p2{
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: var(--primary-color);
-    font-weight: 600;
+.hero__content-txt4{
+    font-weight: 800;
+    color: var(--grey);
+    margin-bottom: 3rem;
 }
 
-.hero__text__title{
-    text-align: center;
-    font-size: 5rem;
-    color: black;
-    font-weight: 600;
+.hero__content-txt4 p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--grey);
+    margin-bottom: 3rem;
 }
 
-#socials-container{
+.social-containers{
     display: flex;
     justify-content: center;
     margin-top: 1rem;
     gap: 1rem;
-}
-
-.socials-icon{
-    cursor: pointer;
-    height: 2rem;
 }
 
 .btn-container{
-    margin-top: 1rem;
     display: flex;
     justify-content: center;
     gap: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .btn{
-    font-weight: 600;
-    transition: all 300ms ease;
     padding: 1rem;
     width: 8rem;
     border-radius: 2rem;
+    font-weight: 600;
+    font-family: var(--poppins-sans);
+    border: var(--black) 0.1rem solid;
+    transition: all 300ms ease;
 }
 
-.btn-color-1, .btn-color-2{
-    border: var(--primary-color) 0.1rem solid;
-}
-
-.btn-color-1:hover, .btn-color-2:hover{
+.btn:hover{
     cursor: pointer;
 }
 
-.btn-color-1, .btn-color-2:hover{
+.download-btn{
+    background: transparent;
+}
+
+.contact-btn, .download-btn:hover{
     background: var(--primary-color);
-    color: #fff;
+    color: white;
 }
 
-.btn-color-1:hover{
-    background: black;
-}
-
-.btn-color-2{
-    background: none;
-}
-
-.btn-color-2:hover{
-    border: var(--primary-color) 0.1rem solid
+.contact-btn:hover{
+    background: var(--black);
 }

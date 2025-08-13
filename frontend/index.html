@@ -8,69 +8,117 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <section class="background-header-and-hero">
-<nav id="desktop-nav">
-      <div class="logo">Paschal Ugoh</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Paschal Ugoh</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+    <header>
+      <nav id="desktop-nav">
+        <div class="logo-container">
+          <h1 data-aos="flip-up">Paschal Ugoh</h1>
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <div>
+          <ul class="desktop-menu" data-aos="fade-down">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-      </div>
-    </nav>
+      </nav>
+
+      <nav id="mobile-nav">
+        <div class="logo-container">
+          <h1 data-aos="flip-up">Paschal Ugoh</h1>
+        </div>
+        <div class="mobile-menu">
+          <div class="mobile-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="mobile-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+    </header>
 
     <section class="hero">
-      <div class="hero__pic-container">
-        <img src="./assets/handsome.jpg" alt="Paschal Ugoh">
+      <div class="hero-img">
+        <img
+          src="./assets/handsome.jpg"
+          alt="Paschal Ugoh"
+          data-aos="fade-right"
+        />
       </div>
-
-      <div class="hero__text">
-        <p class="hero__text__p1">Hey, I’m</p>
-        <h1 class="hero__text__title">Paschal Ugoh</h1>
-        <p class="hero__text__p2">Backend Engineer & Developer</p>
-        <p class="hero__text__p3">
-          <div>
-            I build scalable, reliable backend systems 
-          </div>
-          <div>
-            that power innovative products.
-          </div>
-          <div>I help startups turn ideas into reality,</div><div>with solutions
-              trusted by clients </div>
-              <div>across multiple countries.</div>
-          </p>
-
-        <div class="btn-container">
-          <button class="btn btn-color-2" onclick="window.open('./assets/handsome.jpg')">Download CV</button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+      <div class="hero__content" data-aos="fade-left">
+        <p class="hero__content-txt1">Hello, I'm</p>
+        <h1 class="title">Paschal Ugoh</h1>
+        <h3 class="hero__content-txt3">Backend Engineer & Developer</h3>
+        <div class="hero_content-txt4">
+          <p>I build scalable, reliable backend systems</p>
+          <p>that power innovative products.</p>
+          <p>I help startups turn ideas into reality,</p>
+          <p>with solutions trusted by clients</p>
+          <p>across multiple countries.</p>
         </div>
-
+        <div class="btn-container">
+          <button
+            class="btn download-btn"
+            onclick="window.open('./assets/handsome.jpg')"
+          >
+            Download CV
+          </button>
+          <button class="btn contact-btn" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
         <div id="socials-container">
-          <img src="./assets/linkedin.png" class="socials-icon" alt="linkedin"  onclick="location.href='https://linkedin.com/in/ugohpaschal'">
-          <img src="./assets/github.png" class="socials-icon" alt="github" onclick="location.href='https://github.com/UgohP'">
-          <img src="./assets/linkedin.png" class="socials-icon" alt="x" onclick="location.href='https://x.com/pasky_u'">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/in/ugohpaschal'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/UgohP'"
+          />
         </div>
       </div>
     </section>
-      <!-- <section class="hero">
+
+    <section id="about">
+      <h1 class="title" data-aos="fade-up">About</h1>
+
+      <div class="about-content">
+        <div class="about-img">
+          <img src="./assets/handsome.jpg" alt="Paschal" data-aos="fade-up"/>
+        </div>
+        <div class="about-text-container" data-aos="fade-up">
+          <div class="about-exp">
+            <img src="./assets/email.png" class="icon" alt="email" />
+            <h4 class="exp-txt1">Experience</h4>
+            <p class="exp-txt2">1+ year</p>
+            <p class="exp-txt2">Backend Development</p>
+          </div>
+          <div class="about-exp">
+            <img src="./assets/email.png" class="icon" alt="email" />
+            <h4 class="exp-txt1">Experience</h4>
+            <p class="exp-txt2">1+ year</p>
+            <p class="exp-txt2">Backend Development</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="about">
+      <p class="section__text__p1">Get to know more</p>
+      <p class="section__title"></p>
+    </section> -->
+    <!-- <section class="hero">
         <div class="hero-image">
           <img src="./assets/pasky.jpg" alt="Paschal Ugoh" />
         </div>
@@ -102,7 +150,8 @@
       </p>
       <p>I help startups launch and grow their products</p>
     </section> -->
-  
+
     <script src="js/script.js"></script>
+    <script type="module" src="js/module.js"></script>
   </body>
 </html>
