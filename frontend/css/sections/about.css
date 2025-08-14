@@ -1,51 +1,93 @@
 #about{
-    margin-top: 4vh;
     position: relative;
 }
+.p1{
+margin-bottom: 2rem;
+}
 
-.about-content{
+.line{
+    width: 35px;
+    height: 5px;
+    background-color: var(--secondary-color);
+    justify-self: center;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+}
+
+.section-container{
+    display: flex;
+    gap: 64px;
     margin-top: 2rem;
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
+
 }
 
-.about-img{
+.about-text-container, .expertise, .skills{
     display: flex;
-    width: 400px;
-    height: 400px;
-    margin: auto 0;
-}
-
-.about-img img{
-    border-radius: 50px;
+    flex-direction: column;
 }
 
 .about-text-container{
-    display: flex;
-    gap: 2rem;
-    align-self: center;
+    margin-bottom: 2rem;
 }
 
-.about-exp{
-    flex: 1;
-    border: var(--black) 1px solid;
-    padding: 1.5rem;
-    border-radius: 2rem;
-    /* width: 12rem; */
-    /* height: 9rem; */
-    text-align: center;
-    /* flex-wrap: wrap; */
-}
-
-.exp-txt1{
+.title2{
     font-family: var(--poppins-sans);
-    color: var(--black);
+    font-size: 1.5rem;
     font-weight: 600;
+    color: var(--black);
+    margin-bottom: 1rem;
 }
 
-.exp-txt2{
-    font-family: var(--poppins-sans);
+.about-text-container p{
     font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 5px;
     color: var(--grey);
+    line-height: 2rem;
+    text-align: justify;
+}
+
+.about-text-container p span{
+    font-weight: bolder;
+}
+
+.about-text-container p a{
+    font-weight: 900;
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+.skills{
+    /* align-items: center; */
+    margin-bottom: 2rem;
+}
+
+.title3{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: var(--poppins-sans);
+    color: var(--grey);
+}
+
+.skills-div, .skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.skills-div {
+    width: 600px;
+    gap: 1rem;
+    flex-direction: row;
+}
+
+.skills-container {
+    color: var(--grey);
+    font-weight: 700;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    width: fit-content;
+    background-color: rgb(239, 236, 236);
+    padding: 10px;
+    border-radius: 10px;
 }

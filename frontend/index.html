@@ -10,9 +10,7 @@
   <body>
     <header>
       <nav id="desktop-nav">
-        <div class="logo-container">
-          <h1 data-aos="flip-up">Paschal Ugoh</h1>
-        </div>
+        <div class="logo" data-aos="flip-up">Paschal Ugoh</div>
         <div>
           <ul class="desktop-menu" data-aos="fade-down">
             <li><a href="#about">About</a></li>
@@ -24,9 +22,7 @@
       </nav>
 
       <nav id="mobile-nav">
-        <div class="logo-container">
-          <h1 data-aos="flip-up">Paschal Ugoh</h1>
-        </div>
+        <div class="logo" data-aos="flip-up">Paschal Ugoh</div>
         <div class="mobile-menu">
           <div class="mobile-icon" onclick="toggleMenu()">
             <span></span>
@@ -44,18 +40,18 @@
     </header>
 
     <section class="hero">
-      <div class="hero-img">
+      <div class="section__pic-container">
         <img
           src="./assets/handsome.jpg"
           alt="Paschal Ugoh"
           data-aos="fade-right"
         />
       </div>
-      <div class="hero__content" data-aos="fade-left">
-        <p class="hero__content-txt1">Hello, I'm</p>
+      <div class="section__text" data-aos="fade-left">
+        <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Paschal Ugoh</h1>
-        <h3 class="hero__content-txt3">Backend Engineer & Developer</h3>
-        <div class="hero_content-txt4">
+        <h3 class="section__text__p2">Backend Engineer <br />& Developer</h3>
+        <div class="section__text__p3">
           <p>I build scalable, reliable backend systems</p>
           <p>that power innovative products.</p>
           <p>I help startups turn ideas into reality,</p>
@@ -91,6 +87,89 @@
     </section>
 
     <section id="about">
+      <h1 class="title section-title">About</h1>
+      <div class="line"></div>
+      <p class="p1 section__text__p1">
+        Get to know more about me, what I do, my current skills mostly in terms
+        of programming and technology
+      </p>
+
+      <div class="section-container">
+        <div class="about-text-container">
+          <h1 class="title2">Get to know more!</h1>
+          <p>
+            I'm a <span>Frontend Focused Web Developer</span> building and
+            managing the Front-end of Websites and Web Applications that leads
+            to the success of the overall product. Check out some of my work in
+            the <span>Projects</span> section.
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
+            obcaecati consectetur laboriosam natus
+            <span>laudantium ipsum</span> earum quae facilis amet quas fugiat
+            <a href="">linkedin</a> iure doloremque ullam consequuntur,
+            <a href="">linkedin</a> placeat ex perferendis vel similique.
+          </p>
+          <br />
+          <button class="btn contact-btn">Contact Me</button>
+        </div>
+
+        <div class="expertise">
+          <h1 class="title2">Tech Stack</h1>
+          <div class="skills">
+            <h3 class="title3">Backend Development</h3>
+            <div class="skills-div">
+              <div class="skills-container">
+                <img src="./assets/github.png" alt="github" class="icon2" />
+                <p>Python</p>
+              </div>
+              <div class="skills-container">
+                <img src="./assets/github.png" alt="github" class="icon2" />
+                <p>Django</p>
+              </div>
+              <div class="skills-container">
+                <img src="./assets/github.png" alt="github" class="icon2" />
+                <p>Nodejs</p>
+              </div>
+              <div class="skills-container">
+                <img src="./assets/github.png" alt="github" class="icon2" />
+                <p>Expressjs</p>
+              </div>
+            </div>
+          </div>
+          <div class="skills">
+            <h3 class="title3">Frontend Development</h3>
+            <div class="skills-div">
+              <div class="skills-container">
+                <img src="./assets/github.png" alt="github" class="icon2" />
+                <p>HTML</p>
+              </div>
+              <div class="skills-container">
+                <img src="./assets/github.png" alt="github" class="icon2" />
+                <p>CSS</p>
+              </div>
+              <div class="skills-container">
+                <img src="./assets/github.png" alt="github" class="icon2" />
+                <p>JavaScript</p>
+              </div>
+              <div class="skills-container">
+                <img src="./assets/github.png" alt="github" class="icon2" />
+                <p>React</p>
+              </div>
+              <div class="skills-container">
+                <img src="./assets/github.png" alt="github" class="icon2" />
+                <p>Angular</p>
+              </div>
+              <div class="skills-container">
+                <img src="./assets/github.png" alt="github" class="icon2" />
+                <p>Nextjs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section id="about">
       <h1 class="title" data-aos="fade-up">About</h1>
 
       <div class="about-content">
@@ -112,7 +191,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- <section class="about">
       <p class="section__text__p1">Get to know more</p>

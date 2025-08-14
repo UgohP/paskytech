@@ -8,14 +8,14 @@ nav{
     align-items: center;
 }
 
-.logo-container h1{
+.logo{
     font-family: var(--poppins-sans);
     font-weight: 400;
     font-size: 1.7rem;
     color: var(--black);
 }
 
-.logo-container h1:hover{
+.logo:hover{
     cursor: default;
 }
 
