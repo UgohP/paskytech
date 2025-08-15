@@ -1,0 +1,82 @@
+#projects{
+    position: relative;
+    font-family: var(--poppins-sans);
+}
+.section-container2, .project-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-container2{
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.project-container{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem;
+}
+
+.project-img-container{
+    display: flex;
+}
+
+.project-img-container img{
+    width: 500px;
+    height: 300px;
+    border-radius: 0.5rem;
+}
+
+.project-content{
+    gap: 0.2rem;
+    align-items: center;
+    text-align: center;
+}
+
+.title4{
+    color: var(--black);
+    font-size: 1.1rem;
+}
+
+.project-stack{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 1rem;
+}
+.project-browse{
+    display: flex;
+    gap: 0.5rem;
+}
+.browse-btn{
+    background: transparent;
+    color: var(--black);
+    border: var(--black) 0.1rem solid;
+}
+
+.browse-btn a{
+    text-decoration: none;
+}
+
+.browse-btn:hover{
+    background: var(--secondary-color);
+    color: white;
+    border: var(--secondary-color) 0.1rem solid;
+}
+
+.title5{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.line2{
+    width: 35px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    justify-self: center;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+}
