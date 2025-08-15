@@ -352,7 +352,7 @@
         Whether it’s a project idea or just a friendly hello, my inbox is open.
       </p>
 
-      <form class="contact-form" method="post">
+      <form class="contact-form" method="post" data-aos="fade-up">
         <h1>Send me a message</h1>
 
         <div class="form-row">
@@ -362,7 +362,7 @@
               type="text"
               id="name"
               name="name"
-              required
+              required="required"
               placeholder="Enter your name"
             />
           </div>
@@ -371,7 +371,7 @@
             <input
               type="text"
               id="email"
-              required
+              required="required"
               name="email"
               placeholder="Enter your email"
             />
@@ -382,78 +382,85 @@
           <div class="input-group">
             <label for="message">Your message</label>
             <textarea
-              placeholder="Hello, I think weHi, I have a product and would like to use your services. When would you be available to discuss?"
+              placeholder="Hello, I have a product and would like to use your services. When would you be available to discuss?"
               name="message"
               id="message"
-              required
+              required="required"
               rows="7"
               minlength="30"
             ></textarea>
           </div>
         </div>
+        <!-- <button type="submit" class="btn">
+          <div class="submit-btn">submit</div>
+        </button> -->
+        <input type="submit" class="btn contact-btn" />
       </form>
     </section>
-    <!-- <section id="about">
-      <h1 class="title" data-aos="fade-up">About</h1>
 
-      <div class="about-content">
-        <div class="about-img">
-          <img src="./assets/handsome.jpg" alt="Paschal" data-aos="fade-up"/>
-        </div>
-        <div class="about-text-container" data-aos="fade-up">
-          <div class="about-exp">
-            <img src="./assets/email.png" class="icon" alt="email" />
-            <h4 class="exp-txt1">Experience</h4>
-            <p class="exp-txt2">1+ year</p>
-            <p class="exp-txt2">Backend Development</p>
+    <footer id="footer">
+      <nav id="footer-nav">
+        <div class="footer-logo" data-aos="flip-up">Paschal Ugoh</div>
+        <div class="footer-menu">
+          <div class="footer-icon" onclick="toggleMenuFooter()">
+            <span class="footer-span"></span>
+            <span class="footer-span"></span>
+            <span class="footer-span"></span>
           </div>
-          <div class="about-exp">
-            <img src="./assets/email.png" class="icon" alt="email" />
-            <h4 class="exp-txt1">Experience</h4>
-            <p class="exp-txt2">1+ year</p>
-            <p class="exp-txt2">Backend Development</p>
+          <div class="footer-links">
+            <li><a href="#about" onclick="toggleMenuFooter()">About</a></li>
+            <li>
+              <a href="#projects" onclick="toggleMenuFooter()">Projects</a>
+            </li>
+            <li><a href="#contact" onclick="toggleMenuFooter()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+      <div class="footer-container">
+        <p>Send an email:</p>
+        <div class="footer-main">
+          <div class="footer-menu2">
+            <div class="footer-content">
+              <img src="./assets/email.png" alt="email" class="icon" />
+              <a href="mailto:paskyugoh@gmail.com">paskyugoh@gmail.com</a>
+            </div>
+          </div>
+          <ul class="footer-menu2">
+            <li><a href="#about">About</a></li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-socials">
+          <p>SOCIALS</p>
+          <div class="footer-content">
+            <a href="">
+              <img src="./assets/github.png" alt="github" class="icon" />
+            </a>
+            <a href="">
+              <img src="./assets/email.png" alt="email" class="icon" />
+            </a>
+            <a href="">
+              <img src="./assets/github.png" alt="email" class="icon" />
+            </a>
+            <a href="">
+              <img src="./assets/email.png" alt="email" class="icon" />
+            </a>
+          </div>
+        </div>
+        <hr />
+        <div class="footer-bottom">
+          <div>
+            <h1 class="copy">&copy; Paschal Ugoh <span id="year"></span></h1>
+          </div>
+          <div class="dm">
+            <a href="#contact"><h1 class="copy">Send a message</h1></a>
           </div>
         </div>
       </div>
-    </section> -->
-
-    <!-- <section class="about">
-      <p class="section__text__p1">Get to know more</p>
-      <p class="section__title"></p>
-    </section> -->
-    <!-- <section class="hero">
-        <div class="hero-image">
-          <img src="./assets/pasky.jpg" alt="Paschal Ugoh" />
-        </div>
-
-        <div class="hero-content">
-          <div class="hero-content-info">
-            <h4>Hi, I’m</h4>
-            <h1>Paschal Ugoh</h1>
-            <h2>Backend Engineer & Developer</h2>
-            <p>
-              I build scalable, reliable backend systems that power innovative
-              products. I help startups turn ideas into reality, with solutions
-              trusted by clients across multiple countries.
-            </p>
-          </div>
-
-          <div class="hero-content__buttons"></div>
-          <button class="bero-content__resume-button">Resume</button>
-        </div>
-      </section>
-    </section>
-    <section class="about" id="about">
-      <h1>About</h1>
-      <p>
-        A Software Enginner and Web Developer building and managing Software,
-        Websites and Web Applications experienced in leading cross-functional
-        teams in a time-pressured setting to complete projects on schedule and
-        within budget.
-      </p>
-      <p>I help startups launch and grow their products</p>
-    </section> -->
-
+    </footer>
     <script src="js/script.js"></script>
     <script type="module" src="js/module.js"></script>
   </body>

@@ -7,6 +7,7 @@
 @import url('sections/about.css');
 @import url('sections/projects.css');
 @import url('sections/contact.css');
+@import url('sections/footer.css');
 
 
 /* css variables */
@@ -39,12 +40,15 @@ a .btn{
     transition: all 300ms ease;
 }
 
-section{
-    padding-top: 4vh;
+section, footer{
     box-sizing: border-box;
+    padding-top: 4vh;
+}
+
+section {
     height: 96vh;
-    margin: auto 10rem;
     min-height: fit-content;
+    margin: auto 10rem;
 }
 
 .section-container{
@@ -105,6 +109,13 @@ section{
         height: 83vh;
         margin-bottom: 10rem;
     }
+    .copy{
+        font-size: 1rem;
+    }.footer-menu2 a{
+        font-size: 0.9rem;
+    }.footer-logo{
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -141,11 +152,35 @@ section{
         order: 1;
     }.project-content{
         order: 2;
-    }.section__text__p1, .section__text__p3{
+    }.section__text__p1, 
+    .section__text__p3{
     font-size: 0.8rem;
-}.p1, .skills-container{
+}
+.p1, 
+.skills-container{
     font-size: 0.7rem;
 }
+}
+
+@media screen and (max-width: 700px) {
+    footer{
+        margin-top: 5rem;
+        padding: 2rem;
+    }
+    #footer-nav, .dm{
+        display: none;
+    }.footer-main, .footer-menu2{
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* justify-content: center; */
+    }.footer-main{
+        gap: 3rem
+    }.copy{
+        font-size: 1rem;
+    }.footer-menu2 a{
+        font-size: 0.9rem;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -179,4 +214,13 @@ section{
   .mobile-links li a{
     font-size: 1.25rem;
   }
+  .form-row{
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 581px) {
+    .form-row:first-of-type, .input-group{
+        width: 70%;
+    }
 }
