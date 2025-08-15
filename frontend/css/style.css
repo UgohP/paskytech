@@ -15,9 +15,12 @@
     --montserrat-sans: "Montserrat", sans-serif;
     --poppins-sans: "Poppins", sans-serif;
     --primary-color: #24252A;
-    --secondary-color: #092B9C;
+    /* --secondary-color: #092B9C; */
+    --secondary-color: grey;
     --black: black;
     --grey: grey;
+    --light-grey: rgb(239, 236, 236);
+    --dark-grey: rgb(118, 117, 117);
 }
 
 *{
@@ -98,7 +101,7 @@ section {
     flex-wrap: wrap;
     gap: 0.5rem;
     width: fit-content;
-    background-color: rgb(239, 236, 236);
+    background-color: var(--light-grey);
     padding: 10px;
     border-radius: 10px;
 }
@@ -115,6 +118,9 @@ section {
         font-size: 0.9rem;
     }.footer-logo{
         font-size: 1.2rem;
+    }.border-right, .border-left{
+        border-right: none;
+        border-left: none;
     }
 }
 

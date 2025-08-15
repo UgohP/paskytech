@@ -13,11 +13,15 @@
 }
 
 .project-container{
+    text-align: center;
+    background: rgb(252, 252, 252);
+    padding: 2rem;
     display: flex;
     gap: 2rem;
     justify-content: space-around;
     align-items: center;
-    margin: 2rem;
+    border-radius: 2rem;
+    flex: 1;
 }
 
 .project-img-container{
@@ -79,4 +83,14 @@
     justify-self: center;
     border-radius: 2rem;
     margin-bottom: 1rem;
+}
+
+.border-left{
+  border-left: var(--grey) 0.1rem solid;
+  padding-left: 1rem;
+}
+
+.border-right{
+  border-right: var(--grey) 0.1rem solid;
+  padding-right: 1rem;
 }

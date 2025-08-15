@@ -1,5 +1,5 @@
 footer{
-    background-color: var(--secondary-color);
+    background-color: var(--black);
     color: white;
     padding: 6rem;
     font-family: var(--poppins-sans);
@@ -50,7 +50,7 @@ footer{
     width: fit-content;
     top: 100%;
     right: 0;
-    background-color: var(--secondary-color);
+    background-color: var(--black);
     max-height: 0;
     overflow: hidden;
     transition: all 0.3 ease-in-out;
@@ -70,7 +70,7 @@ footer{
 
 .footer-links a:hover{
     cursor: pointer;
-    color: var(--grey);
+    color: var(--dark-grey);
     font-weight: 500;
     text-decoration: underline;
     text-underline-offset: 1rem;
@@ -115,11 +115,6 @@ footer{
     gap: 0.5rem;
 }
 
-.footer-content img{
-    background-color: white;
-    border-radius: 1rem;
-}
-
 .footer-content a{
     text-decoration: none;
     color: white;
@@ -143,7 +138,7 @@ footer{
 
 .footer-menu2 a:hover{
     cursor: pointer;
-    color: var(--grey);
+    color: var(--dark-grey);
     font-weight: 500;
     text-decoration: underline;
     text-underline-offset: 1rem;
@@ -154,7 +149,7 @@ footer{
 .footer-bottom a{
     font-weight: 800;
     font-size: 1rem;
-    color: var(--grey);
+    color: var(--dark-grey);
 }
 hr{
     margin: 2rem 0;
