@@ -15,7 +15,7 @@
     --montserrat-sans: "Montserrat", sans-serif;
     --poppins-sans: "Poppins", sans-serif;
     --primary-color: #24252A;
-    /* --secondary-color: #092B9C; */
+    --blue: #092B9C;
     --secondary-color: grey;
     --black: black;
     --grey: grey;
@@ -82,6 +82,15 @@ section {
     text-align: center;
 }
 
+.line{
+    width: 35px;
+    height: 5px;
+    background-color: var(--blue);
+    justify-self: center;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+}
+
 /* ICONS */
 
 .icon {
@@ -91,15 +100,15 @@ section {
 
 .icon2 {
   cursor: default;
-  height: 1rem;
+  height: 1.3rem;
 }
 
 .skills-container {
     color: var(--grey);
     font-weight: 700;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 0.2rem;
     width: fit-content;
     background-color: var(--light-grey);
     padding: 10px;

@@ -6,15 +6,6 @@
 margin-bottom: 2rem;
 }
 
-.line{
-    width: 35px;
-    height: 5px;
-    background-color: var(--secondary-color);
-    justify-self: center;
-    border-radius: 2rem;
-    margin-bottom: 1rem;
-}
-
 .about-text-container, .expertise, .skills{
     display: flex;
     flex-direction: column;
@@ -34,25 +25,26 @@ margin-bottom: 2rem;
 .about-text-container p{
     font-family: var(--poppins-sans);
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: var(--grey);
-    font-weight: 400;
-    line-height: 2rem;
+    font-weight: 300;
+    line-height: 1.7rem;
     text-align: justify;
+    hyphens: auto;
+    margin-bottom: 0.5rem;
 }
 
 .about-text-container p span{
-    font-weight: bolder;
+    font-weight: 900;
 }
 
 .about-text-container p a{
     font-weight: 900;
-    color: var(--secondary-color);
+    color: var(--blue);
     text-decoration: underline;
 }
 
 .skills{
-    /* align-items: center; */
     margin-bottom: 2rem;
 }
 

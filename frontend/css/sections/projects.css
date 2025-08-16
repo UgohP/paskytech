@@ -79,7 +79,7 @@
 .line2{
     width: 35px;
     height: 3px;
-    background-color: var(--secondary-color);
+    background-color: var(--blue);
     justify-self: center;
     border-radius: 2rem;
     margin-bottom: 1rem;
